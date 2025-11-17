@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- MathJax für LaTeX -->
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
+<!-- Plotly -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+
+<body>
+<!-- Reiter -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top px-5">
+    <span class="navbar-text mr-4">
+        Tutorium 05 Konzentrationsanalyse
+    </span>
+    <a class="navbar-text mr-4" href="#" onclick="showPlot('liga1')">Liga 1</a>
+    <a class="navbar-text mr-4" href="#" onclick="showPlot('liga2')">Liga 2</a>
+    <a class="navbar-text mr-4" href="#" onclick="showPlot('nullkonzentration')">Nullkonzentration</a>
+    <a class="navbar-text mr-4" href="#" onclick="showPlot('totalekonzentration')">Totale Konzentration</a>
+        <!-- Zusätzlicher Text -->
+        <span class="navbar-text ml-auto" style="color: #555; font-size: 10px; font-style: italic;">
+         von IsabellFtz
+        </span>    
+</nav>
+
+<!-- Plots unter Reiter  -->
+<div id="liga1" style="width:100%; height:100%; margin-top:10px; display:none; margin-left: -22px;">
+    <iframe 
+        src="liga1.html" 
+        width="110%" 
+        height="600px" 
+        frameborder="0"> 
+    </iframe>
+</div>
+
+<div id="liga2" style="width:100%; height:100%; margin-top:10px; display:none; margin-left: -22px;">
+    <iframe 
+        src="liga2.html" 
+        width="110%" 
+        height="600px" 
+        frameborder="0">
+    </iframe>
+</div>
+
+<div id="nullkonzentration" style="width:100%; height:100%; margin-top:10px; display:none; margin-left: -22px;">
+    <iframe 
+        src="nullkonzentration.html" 
+        width="110%" 
+        height="600px" 
+        frameborder="0">
+    </iframe>
+</div>
+
+<div id="totalekonzentration" style="width:100%; height:100%; margin-top:10px; display:none; margin-left: -22px;">
+    <iframe 
+        src="totalekonzentration.html" 
+        width="110%" 
+        height="600px" 
+        frameborder="0">
+    </iframe>
+</div>
+
+
+<script>
+// zum Umschalten zw. Plots
+function showPlot(plotId) {
+    document.getElementById('liga1').style.display = (plotId === 'liga1') ? 'block' : 'none';
+    document.getElementById('liga2').style.display = (plotId === 'liga2') ? 'block' : 'none';
+    document.getElementById('nullkonzentration').style.display = (plotId === 'nullkonzentration') ? 'block' : 'none';
+    document.getElementById('totalekonzentration').style.display = (plotId === 'totalekonzentration') ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
+
+
+

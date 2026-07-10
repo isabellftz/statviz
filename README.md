@@ -15,13 +15,6 @@ Du hast zwei Möglichkeiten, sie zu öffnen:
 3. **Lokal im Browser öffnen**  
 Lade eine HTML-Datei aus diesem Repository herunter und öffne sie durch Doppelklick oder per Drag & Drop in deinem Browser.
 
-Du kannst mit der Maus in die Grafiken hineinzoomen, Achsen verschieben oder einzelne Punkte anzeigen lassen. Probiere es einfach mal ausprobieren!
 
 ## Feedback?
 Wenn du Anregungen hast oder eine Datei bei dir nicht funktioniert, melde dich gerne direkt bei mir. 
-
-
-
-
-Viel Spaß beim Durchklicken & Entdecken!
-
